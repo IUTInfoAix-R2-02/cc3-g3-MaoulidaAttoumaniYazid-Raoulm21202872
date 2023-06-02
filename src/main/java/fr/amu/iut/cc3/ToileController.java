@@ -82,7 +82,4 @@ public class ToileController implements Initializable {
         return (int) (rayonCercleExterieur - Math.sin(Math.toRadians(angleDepart - (axe-1)  * angleEnDegre)) * rayonCercleExterieur
                 *  (value / noteMaximale));
     }
-    public void PosPoint(ActionEvent actionEvent) {
-
-    }
 }
