@@ -35,7 +35,7 @@ public class ToileController implements Initializable {
     @FXML
     int point1 = 0;
     @FXML
-    int point2 = 0;
+    int point2 = 6;
     @FXML
     int point3 = 0;
     @FXML
@@ -64,13 +64,17 @@ public class ToileController implements Initializable {
     @FXML
     Button Bouton1;
     @FXML
+    Button Bouton2;
+    @FXML
     Circle point ;
 
-    @FXML
+
 
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
+        XYChart.Series<Number,Number> series = new XYChart.Series<>();
+        series.getData().add(new XYChart.Data<>(point1,point2));
     }
 
     int getXRadarChart(double value, int axe ){
@@ -82,4 +86,7 @@ public class ToileController implements Initializable {
         return (int) (rayonCercleExterieur - Math.sin(Math.toRadians(angleDepart - (axe-1)  * angleEnDegre)) * rayonCercleExterieur
                 *  (value / noteMaximale));
     }
+
+
+
 }

@@ -9,7 +9,7 @@
 
 <HBox id="scene" prefHeight="420.0" prefWidth="680.0" spacing="20.0" style="-fx-background-color: #b8c9d9;" stylesheets="@style.css" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fr.amu.iut.cc3.ToileController">
 
-    <Pane prefHeight="400.0" prefWidth="400.0">
+    <Pane fx:id="radar" prefHeight="400.0" prefWidth="400.0">
         <Circle centerX="200.0" centerY="200.0" radius="200.0" styleClass="toile" />
         <Circle centerX="200.0" centerY="200.0" radius="150.0" styleClass="toile" />
         <Circle centerX="200.0" centerY="200.0" radius="100.0" styleClass="toile" />
@@ -50,8 +50,8 @@
         <TextField fx:id="competence6" layoutX="610" layoutY="280" prefWidth="50" />
         <!-- Bouton Tracer et vider  -->
         <Button fx:id="Bouton1" layoutX="550" layoutY="350" text="Vider" />
-        <Button layoutX="470" layoutY="350"  text="Tracer" />
-    </Pane>
+        <Button fx:id="Bouton2" layoutX="470" layoutY="350"  text="Tracer"/>
 
+    </Pane>
 
 </HBox>
